@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../leetcode"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"ostream": "cpp",
+			"vector": "cpp"
+		}
+	}
+}
