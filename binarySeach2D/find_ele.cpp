@@ -1,3 +1,4 @@
+//search in a 2D array or matrix that is sorted row wise and col wise
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -34,11 +35,13 @@ int main(){
 
   int k = 9;
 
-  //linear search O(n^2);
+  //linear search
+  //time complexity O(rows*columns);
   // vector<int> ans = linearSearch(matrix,k);
   // cout << ans[0] << " " << ans[1];
 
   //binary search 
+  //time complexity O(rows+columns)
   vector<int> ans = binarySearch(matrix, k);
   cout << ans[0] << " " << ans[1]; 
   
