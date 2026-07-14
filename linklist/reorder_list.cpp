@@ -1,5 +1,7 @@
 #include<iostream>
 using namespace std;
+
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -56,5 +58,7 @@ public:
 };
 
 int main(){
+
+    list = [1,2,3,4,5];
   return 0;
 }
