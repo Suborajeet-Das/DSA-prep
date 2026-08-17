@@ -2,11 +2,13 @@
 
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 
 class Solution{
   public:
   vector<vector<int>> merge(vector<vector<int>> &nums){
+    sort(nums.begin(), nums.end());
     int start1 = nums[0][0];
     int end1 = nums[0][1];
 
