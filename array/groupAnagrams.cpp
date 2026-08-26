@@ -3,6 +3,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include<unordered_map>
 #include<algorithm>
 using namespace std;
 
@@ -11,13 +12,28 @@ public:
 //brute force
     bool isAnagramBrute(vector<string>& strs,string s,string t);
     vector<vector<string>> groupAnagramsBrute(vector<string>& strs);
+
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        unordered_map<string, vector<string>> mpp;
+        for(auto s :strs){
+            string key = s;
+            sort(key.begin(), key.end());
+
+            mpp[key].push_back(s);
+        }
+        vector<vector<string>> ans;
+        for(auto it : mpp){
+            ans.push_back(it.second);
+        }
+        return ans;
+    }
 };
 
 int main(){
   vector<string> strs = {"eat","tea","tan","ate","nat","bat"};
   Solution a;
 
-  vector<vector<string>> ans = a.groupAnagramsBrute(strs);
+  vector<vector<string>> ans = a.groupAnagrams(strs);
 
   for(auto it : ans){
     for(auto p : it){
