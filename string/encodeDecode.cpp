@@ -45,7 +45,7 @@ int main(){
   string encoded = a.encode(strs);
   cout << encoded << endl;
   vector<string> decoded = a.decode(encoded);
-
+//to return the answer
   for(auto it : decoded){
     cout << it << " ";
   }
