@@ -24,5 +24,11 @@ int main(){
   Solution a;
   int k = a.removeDuplicates(nums);
 
-  cout << k;
+  cout << k << endl;
+
+  for(int i=0; i<k; i++){
+    cout <<  nums[i] << " ";
+  }
+
+  return 0;
 }
