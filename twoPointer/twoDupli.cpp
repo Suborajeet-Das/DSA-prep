@@ -21,8 +21,8 @@ public:
 
 int main(){
   vector<int> nums = {0,0,1,1,1,1,2,3,3};
-  Solution a;
-  int k = a.removeDuplicates(nums);
+  Solution b;
+  int k = b.removeDuplicates(nums);
 
   cout << k << endl;
 
